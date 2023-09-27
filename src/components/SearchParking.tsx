@@ -1,4 +1,5 @@
 import '../styles/searchParking.css';
+import Dropdown from './Dropdown';
 
 function SearchParking(){
     return (
@@ -22,6 +23,7 @@ function SearchParking(){
                         <p>Today, 6:30pm</p>
                     </div>
                     <button>SEARCH</button>
+                    <Dropdown defaultValue='Select Mall...'/>
                 </div>
             </section>
         </>
