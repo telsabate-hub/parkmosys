@@ -5,18 +5,18 @@ import '../styles/navbar.css';
 function Menu(){
     const navRef = useRef<HTMLDivElement>(null);
 
-    const showNavbar = () => {
+    const showNavbar = (): void => {
         navRef.current?.classList.toggle("active");
     };
 
-    const selectLink = (e: MouseEvent) => {
-        const elem = (e.target as Element);
+    const selectLink = (e: MouseEvent): void => {
+        const elem = (e.target as HTMLElement);
 
         resetSelectedLink();
         elem.classList.toggle("active");
     };
 
-    const resetSelectedLink = () => {
+    const resetSelectedLink = (): void => {
         document.getElementById("homeLink")?.classList.remove("active");
         document.getElementById("contactLink")?.classList.remove("active");
     };

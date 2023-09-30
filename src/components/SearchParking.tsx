@@ -23,7 +23,10 @@ function SearchParking(){
                         <p>Today, 6:30pm</p>
                     </div>
                     <button>SEARCH</button>
-                    <Dropdown defaultValue='Select Mall...'/>
+                    <Dropdown defaultValue='Select Mall...' width='214px' itemsList={["Option 1", "Option 2"]}/>
+                    <br/>
+                    <br/>
+                    <br/>
                 </div>
             </section>
         </>
