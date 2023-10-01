@@ -2,6 +2,15 @@ import '../styles/searchParking.css';
 import Dropdown from './Dropdown';
 
 function SearchParking(){
+    const mallsList = [
+        "Ayala Malls Feliz", 
+        "Eastwood Mall",
+        "Podium",
+        "SM Marikina",
+        "SM Megamall",
+        "SM North Edsa"
+    ]; 
+
     return (
         <>
             <section className='search-section'>
@@ -23,7 +32,7 @@ function SearchParking(){
                         <p>Today, 6:30pm</p>
                     </div>
                     <button>SEARCH</button>
-                    <Dropdown defaultValue='Select Mall...' width='214px' itemsList={["Option 1", "Option 2"]}/>
+                    <Dropdown defaultValue='Select Mall...' width='214px' itemsList={mallsList}/>
                     <br/>
                     <br/>
                     <br/>

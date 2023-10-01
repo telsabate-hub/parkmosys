@@ -75,7 +75,7 @@
     align-items: center;
     justify-content: flex-start;
     font-size: 14px;
-    padding: 10px 15px;
+    padding: 5px 15px;
     box-sizing: border-box;
     cursor: pointer;
     position: relative;
@@ -84,6 +84,11 @@
 
 .list label:hover {
     background: rgba(110, 155, 123, .3);
+}
+
+input:checked + label {
+    color: #048748;
+    background: #F2FCF4;
 }
 
 .search-box {
