@@ -47,6 +47,10 @@
     color: rgba(0, 0, 0, 0.5);
 }
 
+.input-box:focus {
+    outline: 0.5mm solid rgb(0 0 0);
+}
+
 .list {
     position: absolute;
     top: 100%;
@@ -82,8 +86,19 @@
     color: black;
 }
 
-.list label:hover {
+.list label:hover,
+.list label:focus {
     background: rgba(110, 155, 123, .3);
+    outline: 0.3mm solid rgba(0, 0, 0, 0);
+}
+
+.list label.highlight {
+    background: rgba(110, 155, 123, .3);
+    outline: 0.3mm solid rgba(0, 0, 0, 0);
+}
+
+.items-list:focus {
+    outline: none;
 }
 
 input:checked + label {
@@ -108,7 +123,7 @@ input:checked + label {
 }
 
 .open {
-    outline: 0.5mm solid rgb(0, 0, 0);
+    /* outline: 0.3mm solid rgb(0, 0, 0); */
 }
 
 #search:focus {
